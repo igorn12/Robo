@@ -10,9 +10,11 @@ public class Robo {
         this.coluna = coluna;
         this.sala = sala;
     }
+    
     public void mostrarPosicao(){
         System.out.println("[Robo] está na posicao: "+linha+","+coluna+" da sala!");
     }
+    
     public void andarFrente(){
         if(linha >= 0 && linha < sala.getQtdLinhas()){
             System.out.println("[Robo]: Andando para frente!");
