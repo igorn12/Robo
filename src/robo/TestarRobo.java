@@ -16,6 +16,7 @@ public class TestarRobo {
         sala = new Ambiente(linha, coluna);
         System.out.println("A sala tem tamanho: "+linha+" X "+coluna);
     }
+    
     public void iniciarRobo(){
         int line, column;
         System.out.println("informe a posicao do Robo (Linha e Coluna):");
@@ -25,6 +26,7 @@ public class TestarRobo {
         mig = new Robo(line, column, sala);
         mig.mostrarPosicao();
     }
+    
     public void menu(){
         int option;
         do{

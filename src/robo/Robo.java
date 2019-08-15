@@ -32,6 +32,10 @@ public class Robo {
         
     }
     
+    public void parar(){
+        System.out.println("[Robo]: está parado!");
+    }
+    
     public void virarDireita(){
         if(coluna >= 0 && coluna < sala.getQtdColunas()){
             System.out.println("[Robo]: Virando a direita!");
@@ -48,9 +52,5 @@ public class Robo {
         }else{
             System.out.println("Bateu na parede, faça outro movimento!");
         }
-    }
-    
-    public void parar(){
-        System.out.println("[Robo]: está parado!");
     }
 }
