@@ -18,12 +18,13 @@ public class TestarRobo {
     }
     
     public void iniciarRobo(){
-        int line, column;
+        int line, column;//, movimento;
         System.out.println("informe a posicao do Robo (Linha e Coluna):");
         line = input.nextInt();
         column = input.nextInt();
+        //movimento = input.nextInt();
         
-        mig = new Robo(line, column, sala);
+        mig = new Robo(line, column, sala/*, movimento*/);
         mig.mostrarPosicao();
     }
     
