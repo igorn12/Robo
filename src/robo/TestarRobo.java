@@ -41,19 +41,27 @@ public class TestarRobo {
             System.out.println("6 - Sair");
             option = input.nextInt();
             
-            if(option == 1){
-                mig.andarFrente();
-            }else if(option == 2){
-                mig.andarTras();
-            }else if(option == 3){
-                mig.parar();
-            }else if(option == 4){
-                mig.virarDireita();
-            }else if(option == 5){
-                mig.virarEsquerda();
-            }else{
-                System.out.println("Saindo ...");
+            switch(option){
+                case 1:
+                    mig.andarFrente();
+                    break;
+                case 2:
+                    mig.andarTras();
+                    break;
+                case 3:
+                    mig.parar();
+                    break;
+                case 4:
+                    mig.virarDireita();
+                    break;
+                case 5:
+                    mig.virarEsquerda();
+                    break;
+                case 6:
+                    System.out.println("Saindo ...");
+                    break;
             }
+            
             
         }while(option!=6);
     }
